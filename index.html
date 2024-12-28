@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCAD CoMotion 2024</title>
+  <title>SPM SMI 2025</title>
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/comotion-2024-site.webflow.css" rel="stylesheet" type="text/css">
-<!--  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9VW7WBC1H"></script>
   <script>
       window.dataLayer = window.dataLayer || [];
@@ -58,7 +58,7 @@
 			<a href="#Attendee" class="nav-link w-inline-block">Attendees</a>
 			<a href="#Highlight" class="nav-link w-inline-block">Keynote</a>
 			<a href="#Schedule" class="nav-link w-inline-block">Schedule</a>
-			<a href="#Team" class="nav-link w-inline-block">Team</a>
+			<a href="#Local Info" class="nav-link w-inline-block">Local Info</a>
 			<a href="#Volunteer" class="nav-link w-inline-block">Volunteers</a>
 		  </div>
         </nav>
@@ -95,17 +95,128 @@
 	  
 	  <div id="Attendee" class="section-attendee">
 	    <div class="heading-2">The<br>Attendees</div>
-		<div class="panels-contain">
-		  <div class="attendee-grid">
-		    <div class="card-component">
-		      <a href="https://https://smiconf.github.io/2025/" target="_blank" class="studio-card w-inline-block">
-		        <img src="img/fandisk-hex.jpg" alt="" class="company-logo">
-		        <div class="studio-name--text">TBA</div>
-		      </a>
-		    </div>
-		    <!-- https://spmconf2025.github.io/SPM2025/添加更多参与者内容 -->
+		<div class="team-container w-tabs">
+		  <div class="team--member--tab w-tab-menu" role="tablist">
+		    <a data-w-tab="new-tab" class="button-tab w-inline-block w-tab-link w--current" id="w-tabs-0-data-w-tab-0" href="#w-tabs-0-data-w-pane-0" role="tab" aria-controls="w-tabs-0-data-w-pane-0" aria-selected="true">
+		      <div class="mini-head">SMI</div>
+		    </a>
+		    <a data-w-tab="new-tab 2" class="button-tab w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-1" href="#w-tabs-0-data-w-pane-1" role="tab" aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
+		      <div class="mini-head">SPM</div>
+		    </a>
 		  </div>
+		  <div class="tab-content">
+		    <div id="w-tabs-0-data-w-pane-0" class="tab-pane" style="display: block;"> <!-- 默认显示 -->
+		      <div class="team-member--content w-tab-content">
+		      	<div class="tab-pane w-tab-pane w--tab-active" style="display: block;">
+		      	  <div class="team-grid">
+		      		<div class="team-component">
+		      		  <a class="team--member--div w-inline-block">
+		      			<img src="img/hongwei.jpg" alt="Tucker Ziegler">
+		      			  <div class="team-text--container">
+		      				<div class="team-text name">
+		      				  Hongwei Lin
+		      				</div>
+		      			  <div class="team-text team">
+		      				SMI Technical Paper Chairs
+		      			  </div>
+		      			</div>
+		      		  </a>
+		      		</div>
+					<div class="team-component">
+					  <a class="team--member--div w-inline-block">
+						<img src="img/michela.jpg" alt="Tucker Ziegler">
+						  <div class="team-text--container">
+							<div class="team-text name">
+							  Michela Mortara
+							</div>
+						  <div class="team-text team">
+							SMI Technical Paper Chairs
+						  </div>
+						</div>
+					  </a>
+					</div>
+					<div class="team-component">
+					  <a class="team--member--div w-inline-block">
+						<img src="img/Zichun_Zhong.jpg" alt="Tucker Ziegler">
+						  <div class="team-text--container">
+							<div class="team-text name">
+							  Zichun Zhong
+							</div>
+						  <div class="team-text team">
+							SMI Technical Paper Chairs
+						  </div>
+						</div>
+					  </a>
+					</div>
+					<div class="team-component">
+					  <a class="team--member--div w-inline-block">
+						<img src="img/ErgunAkleman.png" alt="Tucker Ziegler">
+						  <div class="team-text--container">
+							<div class="team-text name">
+							  Ergun Akleman
+							</div>
+						  <div class="team-text team">
+							SMI Communication Chairs
+						  </div>
+						</div>
+					  </a>
+					</div>
+					<div class="team-component">
+					  <a class="team--member--div w-inline-block">
+						<img src="img/SilviaBiasotti.jpg" alt="Tucker Ziegler">
+						  <div class="team-text--container">
+							<div class="team-text name">
+							  Silvia Biasotti
+							</div>
+						  <div class="team-text team">
+							SMI Communication Chairs
+						  </div>
+						</div>
+					  </a>
+					</div>
+					<div class="team-component">
+					  <a class="team--member--div w-inline-block">
+						<img src="img/YangLiu.jpg" alt="Tucker Ziegler">
+						  <div class="team-text--container">
+							<div class="team-text name">
+							  Yang Liu
+							</div>
+						  <div class="team-text team">
+							SMI Communication Chairs
+						  </div>
+						</div>
+					  </a>
+					</div>
+		      	  </div>
+		      	</div>
+		      </div>
+		    </div>
+		    <div id="w-tabs-0-data-w-pane-1" class="tab-pane" style="display: none;"> <!-- 默认隐藏 -->
+		      <div class="team-member--content w-tab-content">
+		      	<div class="tab-pane w-tab-pane" style="display: none;">
+		      	  <div class="team-grid">
+		      		<div class="team-component">
+		      		  <a class="team--member--div w-inline-block">
+		      			<img src="img/Vector.png" alt="Tucker Ziegler">
+		      			  <div class="team-text--container">
+		      				<div class="team-text name">
+		      				  TBA
+		      				</div>
+		      			  <div class="team-text team">
+		      				TBA
+		      			  </div>
+		      			</div>
+		      		  </a>
+		      		
+		      		</div>
+		      	  </div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		  
 		</div>
+		
 	  </div>
 	  
 	  <div id="Highlight" class="section-keynote">
@@ -184,39 +295,49 @@
 	    
 	  </div>
 	  
-	  <div id="Team" class="section-team">
-		<div class="heading-2">The<br>Team</div>
-		<div class="team-container w-tabs">
-		  <div class="team-member--content w-tab-content">
-			<div class="tab-pane w-tab-pane w--tab-active">
-			  <div class="team-grid">
-				<div class="team-component">
-				  <a class="team--member--div w-inline-block">
-					<img src="img/hongwei.jpg" alt="Tucker Ziegler">
-					<div class="team-text--container">
-					  <div class="team-text name">
-						Hongwei Lin
-					  </div>
-					  <div class="team-text team">
-					  	SMI Technical Paper Chairs
-					  </div>
-					</div>
-				  </a>
-				  
-				</div>
-			  </div>
-			</div>
+	  <div id="Local Info" class="section-team">
+		<div class="heading-2">Local<br>Info</div>
+		<div class="panels-contain">
+		  <div class="attendee-grid">
+		    <div class="card-component">
+		      <a href="https://https://smiconf.github.io/2025/" target="_blank" class="studio-card w-inline-block">
+		        <img src="img/fandisk-hex.jpg" alt="" class="company-logo">
+		        <div class="studio-name--text">TBA</div>
+		      </a>
+		    </div>
+		    <!-- https://spmconf2025.github.io/SPM2025/添加更多参与者内容 -->
 		  </div>
 		</div>
 	  </div>
 	  
 	  <div id="Volunteer" class="section-volunteer">
-		<div class="heading-2">Volunteers</div>
+		<div class="heading-2">For attendees</div>
 	    <p>TBA</p>
 	  </div>
 	  
+	  <div class="footer">
+	    <div class="section-header _60-cert">
+	      <div class="heading-4">SPM&nbsp;SMI 2025</div>
+	      <div class="highfi-body">SPM SMI xxx.</div>
+	    </div>
+	    <div class="footer-stack">
+	      <a href="mailto:MOMELove@clubs.scad.edu" class="footer-link w-inline-block">
+	        <div class="highfi-body">xxx@email</div>
+	        <div class="footer-icon"><img src="img/mail.png" loading="lazy" alt="" class="footer-icon--image"></div>
+	      </a>
+	      <a href="https://www.instagram.com/scadcomotion/?hl=en" target="_blank" class="footer-link w-inline-block">
+	        <div class="highfi-body">xxx@email</div>
+	        <div class="footer-icon"><img src="img/mail.png" loading="lazy" alt="" class="footer-icon--image">
+	        </div>
+	      </a>
+	      <a href="https://www.instagram.com/scadmomelove/?hl=en" target="_blank" class="footer-link w-inline-block">
+	        <div class="highfi-body">xxx@email</div>
+	        <div class="footer-icon"><img src="img/mail.png" loading="lazy" alt="" class="footer-icon--image">
+	        </div>
+	      </a>
+	    </div>
+	  </div>
 	</div>
-    
   </div>
   
   <script src="js/webflow.js" type="text/javascript"></script>

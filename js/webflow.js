@@ -68,5 +68,47 @@ document.addEventListener("DOMContentLoaded", function () {
 	    }
 	  });
 	});
+	
+	const tabs = document.querySelectorAll(".button-tab");
+	const tabContents = document.querySelectorAll(".tab-pane");
+	
+	tabs.forEach(tab => {
+	    tab.addEventListener("click", function (event) {
+	        event.preventDefault(); // 阻止默认跳转行为
+	
+	        tabs.forEach(t => {
+	            t.classList.remove("w--current");
+	            t.setAttribute("aria-selected", "false");
+	            t.setAttribute("tabindex", "-1");
+	        });
+	
+	        tabContents.forEach(content => {
+	            content.style.display = "none"; // 隐藏父级内容
+	            content.classList.remove("w--tab-active");
+	
+	            const nestedTabPanes = content.querySelectorAll(".w-tab-pane");
+	            nestedTabPanes.forEach(nestedPane => {
+	                nestedPane.style.display = "none";
+	                nestedPane.classList.remove("w--tab-active");
+	            });
+	        });
+	
+	        this.classList.add("w--current");
+	        this.setAttribute("aria-selected", "true");
+	        this.removeAttribute("tabindex");
+	
+	        const targetContent = document.querySelector(this.getAttribute("href"));
+	        if (targetContent) {
+	            targetContent.style.display = "block";
+	            targetContent.classList.add("w--tab-active");
+	
+	            const nestedActivePane = targetContent.querySelector(".w-tab-pane");
+	            if (nestedActivePane) {
+	                nestedActivePane.style.display = "block";
+	                nestedActivePane.classList.add("w--tab-active");
+	            }
+	        }
+	    });
+	});
 
 });
