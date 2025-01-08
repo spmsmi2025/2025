@@ -8,6 +8,7 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/comotion-2024-site.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/web.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
 </head>
 
 <body class="body-html">
-  <div id="CoMotion-Hero" class="loop-container">
+  <!-- <div id="CoMotion-Hero" class="loop-container">
     <div class="video-container-2">
       <div class="new-hero-container">
         <img class="last-shot" src="img/smilogo-1080.png" alt="Last Frame">
@@ -29,14 +30,7 @@
     </div>
     <div class="first-look--container">
       <div class="highfi-body">
-        Shape Modeling International (SMI 2025) provides an international forum for
-		the dissemination of new mathematical theories and computational techniques
-		for modeling, simulating and processing digital representations of shapes and
-		their properties to a community of researchers, developers, students, 
-		and practitioners across a wide range of fields. Conference proceedings will 
-		be published in a Special Issue of Computers & Graphics Journal, Elsevier. 
-		Papers presenting original research are being sought in all areas of shape 
-		modeling and its applications.
+        
       </div>
       <div class="scroll-section">
         <img src="img/black-arrow.png" alt="Scroll Arrow">
@@ -44,8 +38,24 @@
         <img src="img/black-arrow.png" alt="Scroll Arrow">
       </div>
     </div>
-  </div>
-
+  </div> -->
+  <section class="hero-area">
+    <div class="main__circle"></div>
+    <div class="main__circle2"></div>
+    <div class="main__circle3"></div>
+    <div class="main__circle4"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12 col-12">
+          <div class="hero-content">
+            <h2 class="wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Symposium on Solid and Physical Modeling (SPM) 2025</h2>
+			<h2 class="wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Shape Modeling International (SMI 2025)</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	  
   <div class="the-grid">
     <div class="navbar-2 w-nav">
       <div class="container-3 w-container">
@@ -55,10 +65,10 @@
         <nav role="navigation" class="nav-menu w-nav-menu">
 		  <div class="nav-container">
 			<a href="#About" class="nav-link w-inline-block">About</a>
-			<a href="#Attendee" class="nav-link w-inline-block">Attendees</a>
+			<a href="#Attendee" class="nav-link w-inline-block">Chairs</a>
 			<a href="#Highlight" class="nav-link w-inline-block">Keynote</a>
 			<a href="#Schedule" class="nav-link w-inline-block">Schedule</a>
-			<a href="#Local Info" class="nav-link w-inline-block">Local Info</a>
+			<!-- <a href="#Local Info" class="nav-link w-inline-block">Local Info</a> -->
 			<a href="#Volunteer" class="nav-link w-inline-block">Volunteers</a>
 		  </div>
         </nav>
@@ -67,45 +77,90 @@
 
 	<div class="new-right-column">
 	  <div id="About" class="section-sell">
-	    <div class="heading-2">SMI&SPM<br>Conference Chairs</div>
-	    <div class="container--hero-card">
-	      <div class="hero-card">
-	        <div class="card--main-div">
-			  <img src="img/georges-pierre.jpg" loading="lazy" width="250" height="250" alt="" class="special">
-	          <div class="heading-3 _24-padding">Georges-Pierre<br>Bonneau</div>
+	    <section id="about">
+	      <div class="container aos-init aos-animate" data-aos="fade-up">
+	        <div class="section-title">
+	          <h2>About</h2>
+	    	  <!-- <p>The International Geometry Summit 2023 (IGS’23) will co-locate in a joint event the major conferences in applied geometry:</p>
+	    	  <li>SMI’23 - Shape Modeling International 2023 -  July 4-6</li>
+	    	  <li>SPM’23 - Symposium on Physical and Solid Modeling 2023 - July 5-7</li>
+	    	  <li>GMP’23 –  Geometric Modeling and Processing 2023 - July 6-7</li>
+	    	  <li>GD’23  – SIAM Conference on Computational Geometric Design 2023 - July 3-7</li>
+	    	  <li>SGP’23  - EG Symposium on Geometry Processing 2023 -  July 3-5</li> -->
+	          <p>Shape Modeling International (SMI 2025) provides an international forum for</p>
+			  <p>the dissemination of new mathematical theories and computational techniques</p>
+			  <p>for modeling, simulating and processing digital representations of shapes and</p>
+			  <p>their properties to a community of researchers, developers, students, </p>
+			  <p>and practitioners across a wide range of fields. Conference proceedings will </p>
+			  <p>be published in a Special Issue of Computers & Graphics Journal, Elsevier. </p>
+			  <p>Papers presenting original research are being sought in all areas of shape </p>
+			  <p>modeling and its applications.</p>
 	        </div>
-	        <div class="highfi-body">Université Grenoble Alpes, France</div>
+			<div class="article-en">
+			  <a class="insise-en-row" href="https://smiconf.github.io/2025/index.html">
+			    <div class="article-en-flex">
+			      <div class="article-en-flex-span">Shape Modeling International (SMI 2025)</div>
+			      <!-- <div class="article-en-flex-date">2024-10-20</div> -->
+			    </div>
+			    <hr class="hr-en">
+			  </a>
+			  <a class="insise-en-row" href="https://spmconf2025.github.io/SPM2025/Local.html">
+			    <div class="article-en-flex">
+			      <div class="article-en-flex-span">Symposium on Solid and Physical Modeling (SPM) 2025</div>
+			      <!-- <div class="article-en-flex-date">2024-11-01</div> -->
+			    </div>
+			    <hr class="hr-en">
+			  </a>
+			</div>
 	      </div>
-	      <div class="hero-card">
-	        <div class="card--main-div">
-	          <img src="img/gang.jpg" loading="lazy" width="250" height="250" alt="" class="special">
-			  <div class="heading-3 _24-padding">Gang<br>Xu</div>
-	        </div>
-	        <div class="highfi-body">Hangzhou Dianzi University, China</div>
-	      </div>
-	      <div class="hero-card">
-	        <div class="card--main-div">
-	          <img src="img/weiwei.jpg" loading="lazy" width="250" height="250" alt="" class="special">
-			  <div class="heading-3 _24-padding">Weiwei<br>Xu</div>
-	        </div>
-	        <div class="highfi-body">Zhejiang University, China</div>
-	      </div>
-	    </div>
+		</section>
+		
 	  </div>
 	  
 	  <div id="Attendee" class="section-attendee">
-	    <div class="heading-2">The<br>Attendees</div>
+	    <!-- <div class="heading-2">The<br>Attendees</div> -->
+		
 		<div class="team-container w-tabs">
-		  <div class="team--member--tab w-tab-menu" role="tablist">
+		  <section id="summitchairs" class="pricing section-bg">
+		    <div class="section-title">
+		      <h2>Summit Chairs of GS'23</h2>
+		    </div>
+		    <!-- <div class="heading-2">SMI&SPM<br>Conference Chairs</div> -->
+		    <div class="container--hero-card">
+		      <div class="hero-card">
+		        <div class="card--main-div">
+		    	  <img src="img/georges-pierre.jpg" loading="lazy" width="250" height="250" alt="" class="special">
+		          <div class="heading-3 _24-padding">Georges-Pierre<br>Bonneau</div>
+		        </div>
+		        <div class="highfi-body">Université Grenoble Alpes, France</div>
+		      </div>
+		      <div class="hero-card">
+		        <div class="card--main-div">
+		          <img src="img/gang.jpg" loading="lazy" width="250" height="250" alt="" class="special">
+		    	  <div class="heading-3 _24-padding">Gang<br>Xu</div>
+		        </div>
+		        <div class="highfi-body">Hangzhou Dianzi University, China</div>
+		      </div>
+		      <div class="hero-card">
+		        <div class="card--main-div">
+		          <img src="img/weiwei.jpg" loading="lazy" width="250" height="250" alt="" class="special">
+		    	  <div class="heading-3 _24-padding">Weiwei<br>Xu</div>
+		        </div>
+		        <div class="highfi-body">Zhejiang University, China</div>
+		      </div>
+		    </div>
+
+		  </section>
+		  <!-- <div class="team--member--tab w-tab-menu" role="tablist">
 		    <a data-w-tab="new-tab" class="button-tab w-inline-block w-tab-link w--current" id="w-tabs-0-data-w-tab-0" href="#w-tabs-0-data-w-pane-0" role="tab" aria-controls="w-tabs-0-data-w-pane-0" aria-selected="true">
 		      <div class="mini-head">SMI</div>
 		    </a>
 		    <a data-w-tab="new-tab 2" class="button-tab w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-1" href="#w-tabs-0-data-w-pane-1" role="tab" aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
 		      <div class="mini-head">SPM</div>
 		    </a>
-		  </div>
-		  <div class="tab-content">
-		    <div id="w-tabs-0-data-w-pane-0" class="tab-pane" style="display: block;"> <!-- 默认显示 -->
+		  </div> -->
+		  <!-- <div class="tab-content">
+		    <div id="w-tabs-0-data-w-pane-0" class="tab-pane" style="display: block;">
 		      <div class="team-member--content w-tab-content">
 		      	<div class="tab-pane w-tab-pane w--tab-active" style="display: block;">
 		      	  <div class="team-grid">
@@ -191,7 +246,7 @@
 		      	</div>
 		      </div>
 		    </div>
-		    <div id="w-tabs-0-data-w-pane-1" class="tab-pane" style="display: none;"> <!-- 默认隐藏 -->
+		    <div id="w-tabs-0-data-w-pane-1" class="tab-pane" style="display: none;">
 		      <div class="team-member--content w-tab-content">
 		      	<div class="tab-pane w-tab-pane" style="display: none;">
 		      	  <div class="team-grid">
@@ -213,19 +268,25 @@
 		      	</div>
 		      </div>
 		    </div>
-		  </div>
+		  </div> -->
 		  
 		</div>
 		
 	  </div>
 	  
 	  <div id="Highlight" class="section-keynote">
-	    <div class="heading-2">The<br>Keynote</div>
+		
+	    <!-- <div class="heading-2">The<br>Keynote</div> -->
 	    <div class="panel-card">
+		  <section id="about">
+		    <div class="section-title">
+		      <h2>Keynote</h2>
+		    </div>
+		  </section>
 		  <div class="container--title">
 			<div class="title--top-div">
 			  <div class="mini-head">October 29 to November 2, 2025, in Hangzhou, Zhejiang, P.R. China.</div>
-			  <div class="heading-3">Keynote:</div>
+			  <!-- <div class="heading-3">Keynote:</div> -->
 			</div>
 			<div class="mini-head">The Symposium on Solid and Physical Modeling (SPM) is an international conference series organized annually with the support of the Solid Modeling Association (SMA).</div>
 		  </div>
@@ -238,9 +299,15 @@
 	  </div>
 	  
 	  <div id="Schedule" class="section-schedule">
-	    <div class="heading-2">The<br>Schedule</div>
+<!-- 	    <div class="heading-2">The<br>Schedule</div> -->
 		<div class="section-panel--grid">
+		  
 		  <div class="panel-card--small">
+			<section id="about">
+			  <div class="section-title">
+			    <h2>The Schedule</h2>
+			  </div>
+			</section>
 			<div class="container--title">
 			  <div class="title--top-div">
 			    <div class="mini-head">Day 1 • 2:15 PM</div>
@@ -295,24 +362,38 @@
 	    
 	  </div>
 	  
-	  <div id="Local Info" class="section-team">
+<!-- 	  <div id="Local Info" class="section-team">
 		<div class="heading-2">Local<br>Info</div>
 		<div class="panels-contain">
-		  <div class="attendee-grid">
-		    <div class="card-component">
-		      <a href="https://https://smiconf.github.io/2025/" target="_blank" class="studio-card w-inline-block">
-		        <img src="img/fandisk-hex.jpg" alt="" class="company-logo">
-		        <div class="studio-name--text">TBA</div>
-		      </a>
+		  <section id="about">
+		    <div class="section-title">
+		      <h2>Local Info</h2>
 		    </div>
-		    <!-- https://spmconf2025.github.io/SPM2025/添加更多参与者内容 -->
-		  </div>
+		  </section>
+		  
 		</div>
-	  </div>
+	  </div> -->
 	  
 	  <div id="Volunteer" class="section-volunteer">
-		<div class="heading-2">For attendees</div>
-	    <p>TBA</p>
+		<section id="about">
+		  <div class="section-title">
+		    <h2>For attendees</h2>
+		  </div>
+		</section>
+		<div class="attendee-grid">
+		  <div class="card-component">
+		    <a href="https://https://smiconf.github.io/2025/" target="_blank" class="studio-card w-inline-block">
+		      <img src="img/fandisk-hex.jpg" alt="" class="company-logo">
+		      <div class="studio-name--text">TBA</div>
+		    </a>
+		  </div>
+		  <!-- https://spmconf2025.github.io/SPM2025/添加更多参与者内容 -->
+		</div>
+	    <p class="wow fadeInUp" data-wow-delay=".6s" align="justify" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;"> 
+	      <a href="https://wgly.hangzhou.gov.cn/en/tg/eh/d/r/index.html#category" target="new">Local Restaurants</a>
+	    				<br>
+	      <a href="https://wgly.hangzhou.gov.cn/en/tg/index.html" target="new">Things to do</a>
+	    </p>
 	  </div>
 	  
 	  <div class="footer">

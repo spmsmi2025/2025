@@ -18,7 +18,7 @@ body {
   max-width: 1200px;
   grid-column-gap: 24px;
   grid-row-gap: 16px;
-  background-color: #94e3ce;
+  background-color: #fffffe;
   flex-direction: row;
   grid-template-rows: auto;
   grid-template-columns: auto 1fr;
@@ -90,7 +90,7 @@ body {
 }
 
 .body-html {
-  background-color: #94e3ce;
+  background-color: #fffffe;
   flex-direction: column;
   display: flex;
 }
@@ -1133,7 +1133,7 @@ body {
 }
 
 .navbar {
-  background-color: #94e3ce;
+  background-color: #fffffe;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -1152,7 +1152,7 @@ body {
 .navbar-2 {
   z-index: 1;
   width: auto;
-  background-color: #94e3ce;
+  background-color: #fffffe;
   padding-top: 16px;
   padding-left: 16px;
   padding-right: 16px;
@@ -1559,7 +1559,7 @@ body {
   }
 
   .body-html {
-    background-color: #94e3ce;
+    background-color: #fffffe;
   }
 
   .right-column {
@@ -1743,7 +1743,7 @@ body {
   }
 
   .body-html {
-    background-color: #94e3ce;
+    background-color: #fffffe;
   }
 
   .logo-video {
@@ -2331,7 +2331,7 @@ body {
 @media screen and (max-width: 767px) {
   .nav-div {
     z-index: 1;
-    background-color: #94e3ce;
+    background-color: #fffffe;
     padding-left: 0;
     position: -webkit-sticky;
     position: sticky;
@@ -2858,7 +2858,7 @@ body {
 
   .nav-menu {
     width: auto;
-    background-color: #94e3ce;
+    background-color: #fffffe;
     flex-direction: column;
     margin-left: 8px;
     margin-right: 8px;
@@ -2866,7 +2866,7 @@ body {
   }
 
   .menu-button {
-    background-color: #94e3ce;
+    background-color: #fffffe;
   }
 
   .menu-button.w--open {
