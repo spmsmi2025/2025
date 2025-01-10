@@ -111,4 +111,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	    });
 	});
 
+	const heroCards = document.querySelectorAll(".hero-card");
+	
+	heroCards.forEach((card, index) => {
+	    card.style.animation = `fadeIn 1s ease-out ${index * 0.2}s both`; // 延迟淡入效果
+	});
 });

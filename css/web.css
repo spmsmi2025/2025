@@ -72,8 +72,17 @@
     background-color: #f0f1f0;
     padding: 200px 0 150px 0;
     padding-bottom: 240px;
-    background-image: url(../images/hero/hero-bg.jpg);
+    background-image: url(../img/HZ01.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.hero-area .hero-content h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    color: #fff;
+    margin: 0px 0 18px;
+    overflow: hidden;
+	letter-spacing: -0.5px;
 }
