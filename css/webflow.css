@@ -1756,6 +1756,7 @@ textarea.w-select {
 }
 .w-tab-menu {
   position: relative;
+  margin-top: 12px;
 }
 .w-tab-link {
   position: relative;

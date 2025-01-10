@@ -746,7 +746,8 @@ body {
   grid-row-gap: 12px;
   flex-wrap: wrap;
   flex: 0 auto;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
+  justify-content: center;
   align-items: flex-start;
   padding-bottom: 24px;
   display: flex;
