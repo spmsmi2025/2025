@@ -61,8 +61,8 @@ body {
 }
 
 .vectors-wrapper {
-  width: 90px;
-  height: 69.3295px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   justify-content: center;
   align-items: center;
@@ -360,14 +360,12 @@ body {
 
 .container--title.locations {
   width: 100%;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding-right: 48px;
-  margin-left: -20px;
+  justify-content: center;
+  gap: 16px;
+  padding-left: 100px;
 }
-
 .container--title.tight-column {
   max-width: 478.516px;
   grid-column-gap: 8px;
@@ -877,6 +875,7 @@ body {
 
 .nav-link {
   width: 100%;
+  font-size: 18px;
   color: #000;
   padding: 2px 8px;
   text-decoration: none;
@@ -1403,12 +1402,14 @@ body {
   opacity: .6;
 }
 
-.image-locaiton {
-  width: 100%;
-  height: 400px;
-  background-image: url('../img/smilogo.png');
-  /* background-position: 75%; */
-  background-size: cover;
+.image-location {
+  width: 400px;
+  height: auto;
+  padding-top: 50%;
+  background-image: url('../img/smi.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 8px;
   order: -1;
 }
@@ -1419,12 +1420,38 @@ body {
   object-fit: cover;
 }
 
-.image-locaiton-2 {
-  width: 100%;
-  height: 400px;
-  background-image: url('../img/smilogo.png');
-  /* background-position: 75%; */
-  background-size: cover;
+.image-location-2 {
+  width: 400px;
+  height: auto;
+  padding-top: 50%;
+  background-image: url('../img/spm.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  order: -1;
+}
+
+.image-location-1 {
+  width: 400px;
+  height: auto;
+  padding-top: 50%;
+  background-image: url('../img/localrestaurant.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 8px;
+  order: -1;
+}
+
+.image-location-3 {
+  width: 400px;
+  height: auto;
+  padding-top: 50%;
+  background-image: url('../img/thingstodo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
   border-radius: 8px;
   order: -1;
 }
@@ -1628,13 +1655,6 @@ body {
     object-position: 50% 50%;
   }
 
-  .container--title.locations {
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    justify-content: flex-start;
-	margin-left: -20px;
-  }
-
   .mini-head {
     letter-spacing: .09rem;
   }
@@ -1724,11 +1744,6 @@ body {
     grid-row-gap: 40px;
   }
 
-  .image-locaiton, .image-locaiton-2 {
-    width: 450px;
-    height: 320px;
-  }
-
   .new-hero-container {
     padding-top: 62%;
   }
@@ -1803,13 +1818,6 @@ body {
   .section-panel {
     object-fit: cover;
     object-position: 50% 60%;
-  }
-
-  .container--title.locations {
-    grid-column-gap: 48px;
-    grid-row-gap: 48px;
-    justify-content: flex-start;
-	margin-left: -20px;
   }
 
   .heading-3 {
@@ -1891,11 +1899,6 @@ body {
   .team-grid {
     grid-row-gap: 32px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .image-locaiton, .image-locaiton-2 {
-    width: 500px;
-    height: 360px;
   }
 
   .new-hero-container {
@@ -2093,10 +2096,6 @@ body {
 
   .section-padding {
     max-width: 1400px;
-  }
-
-  .image-locaiton, .image-locaiton-2 {
-    width: 640px;
   }
 
   .container-location-thing {
@@ -2657,14 +2656,6 @@ body {
     padding-right: 16px;
   }
 
-  .container--title.locations {
-    grid-column-gap: 48px;
-    grid-row-gap: 48px;
-    flex-direction: column;
-    padding-right: 0;
-	margin-left: -20px;
-  }
-
   .container--title.tight-column {
     width: 100%;
     max-width: none;
@@ -2930,10 +2921,6 @@ body {
   .section-padding {
     width: auto;
     max-width: none;
-  }
-
-  .image-locaiton, .image-locaiton-2 {
-    width: 100%;
   }
 
   .logo-video-copy {

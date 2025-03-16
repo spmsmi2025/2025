@@ -69,45 +69,53 @@ document.addEventListener("DOMContentLoaded", function () {
 	  });
 	});
 	
-	const tabs = document.querySelectorAll(".button-tab");
-	const tabContents = document.querySelectorAll(".tab-pane");
+	const tabMenus = document.querySelectorAll(".team--member--tab"); // 获取所有 Tab 组件
 	
-	tabs.forEach(tab => {
-	    tab.addEventListener("click", function (event) {
-	        event.preventDefault(); // 阻止默认跳转行为
+	tabMenus.forEach(tabMenu => {
+	    const tabs = tabMenu.querySelectorAll(".button-tab"); // 获取当前组件的 tabs
 	
-	        tabs.forEach(t => {
-	            t.classList.remove("w--current");
-	            t.setAttribute("aria-selected", "false");
-	            t.setAttribute("tabindex", "-1");
-	        });
+	    tabs.forEach(tab => {
+	        tab.addEventListener("click", function (event) {
+	            event.preventDefault(); // 阻止默认跳转行为
 	
-	        tabContents.forEach(content => {
-	            content.style.display = "none"; // 隐藏父级内容
-	            content.classList.remove("w--tab-active");
+	            const parentTabMenu = tab.closest(".team--member--tab");
+	            const parentTabs = parentTabMenu.querySelectorAll(".button-tab");
 	
-	            const nestedTabPanes = content.querySelectorAll(".w-tab-pane");
-	            nestedTabPanes.forEach(nestedPane => {
-	                nestedPane.style.display = "none";
-	                nestedPane.classList.remove("w--tab-active");
+	            parentTabs.forEach(t => {
+	                t.classList.remove("w--current");
+	                t.setAttribute("aria-selected", "false");
+	                t.setAttribute("tabindex", "-1");
 	            });
-	        });
 	
-	        this.classList.add("w--current");
-	        this.setAttribute("aria-selected", "true");
-	        this.removeAttribute("tabindex");
+	            tab.classList.add("w--current");
+	            tab.setAttribute("aria-selected", "true");
+	            tab.removeAttribute("tabindex");
 	
-	        const targetContent = document.querySelector(this.getAttribute("href"));
-	        if (targetContent) {
+	            const targetContent = document.querySelector(tab.getAttribute("href"));
+	            if (!targetContent) return;
+	
+	            const parentTabContents = targetContent.parentElement.querySelectorAll(".w-tab-pane");
+	
+	            parentTabContents.forEach(content => {
+	                content.style.display = "none";
+	                content.classList.remove("w--tab-active");
+	            });
+	
 	            targetContent.style.display = "block";
 	            targetContent.classList.add("w--tab-active");
-	
-	            const nestedActivePane = targetContent.querySelector(".w-tab-pane");
-	            if (nestedActivePane) {
-	                nestedActivePane.style.display = "block";
-	                nestedActivePane.classList.add("w--tab-active");
+	                
+	            if (targetContent.id === "w-tabs-0-data-w-pane-10") {
+	                document.getElementById("w-tabs-0-data-w-pane-11").style.display = "none";
+	            } else if (targetContent.id === "w-tabs-0-data-w-pane-11") {
+	                document.getElementById("w-tabs-0-data-w-pane-10").style.display = "none";
 	            }
-	        }
+	
+	            if (targetContent.id === "w-tabs-0-data-w-pane-0") {
+	                document.getElementById("w-tabs-0-data-w-pane-1").style.display = "none";
+	            } else if (targetContent.id === "w-tabs-0-data-w-pane-1") {
+	                document.getElementById("w-tabs-0-data-w-pane-0").style.display = "none";
+	            }
+	        });
 	    });
 	});
 
