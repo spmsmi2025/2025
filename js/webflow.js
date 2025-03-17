@@ -115,6 +115,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	            } else if (targetContent.id === "w-tabs-0-data-w-pane-1") {
 	                document.getElementById("w-tabs-0-data-w-pane-0").style.display = "none";
 	            }
+				
+				if (targetContent.id === "w-tabs-0-data-w-pane-20") {
+				    document.getElementById("w-tabs-0-data-w-pane-21").style.display = "none";
+				} else if (targetContent.id === "w-tabs-0-data-w-pane-21") {
+				    document.getElementById("w-tabs-0-data-w-pane-20").style.display = "none";
+				}
 	        });
 	    });
 	});
