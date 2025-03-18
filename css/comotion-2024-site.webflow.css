@@ -61,8 +61,8 @@ body {
 }
 
 .vectors-wrapper {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   justify-content: center;
   align-items: center;
@@ -882,7 +882,7 @@ body {
 }
 
 .footer {
-  width: 100%;
+  width: 80%;
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   flex-direction: column;
@@ -1457,7 +1457,6 @@ body {
   background-image: url('../img/smi.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
   border-radius: 8px;
   order: -1;
 }
@@ -1475,7 +1474,6 @@ body {
   background-image: url('../img/spm.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
   border-radius: 8px;
   order: -1;
 }
@@ -2178,7 +2176,7 @@ body {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1000px) {
   .cleaning-for-webflow {
     width: auto;
     max-width: 100%;
@@ -2603,8 +2601,8 @@ body {
 
 @media screen and (max-width: 479px) {
   .vectors-wrapper {
-    width: 64px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     margin-right: 100px;
   }
 

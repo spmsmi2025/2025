@@ -1627,7 +1627,25 @@ textarea.w-select {
 .w-nav-link.w--current {
   color: #0082f3;
 }
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 477px) {
+  .brand-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 997px) {
+  .brand-container-2 {
+    display: flex;
+  }
+}
 .w-nav-menu {
+  margin-top: 10px;
   position: relative;
   float: right;
 }
