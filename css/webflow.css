@@ -69,6 +69,9 @@ html.w-mod-touch * {
   max-width: 100%;
   display: inline-block;
 }
+.w-inline-block {
+  color: #0000da;
+}
 .w-clearfix:before,
 .w-clearfix:after {
   content: " ";
