@@ -1355,6 +1355,22 @@ body {
   text-decoration: none;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12pt;
+}
+th {
+    background-color: #4878C0;
+    color: white;
+    padding: 10px;
+}
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
 .location-div.vert:hover {
   color: #0000da;
 }
