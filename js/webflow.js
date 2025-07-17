@@ -76,7 +76,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	    tabs.forEach(tab => {
 	        tab.addEventListener("click", function (event) {
-	            event.preventDefault(); // 阻止默认跳转行为
+				const href = tab.getAttribute("href");
+				
+				if (href.startsWith("http://") || href.startsWith("https://")) {
+				    return;
+				}
+				
+	            event.preventDefault();
 	
 	            const parentTabMenu = tab.closest(".team--member--tab");
 	            const parentTabs = parentTabMenu.querySelectorAll(".button-tab");
