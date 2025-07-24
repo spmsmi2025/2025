@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	        tab.addEventListener("click", function (event) {
 				const href = tab.getAttribute("href");
 				
-				if (href.startsWith("http://") || href.startsWith("https://")) {
+				if (!href || href.startsWith("http://") || href.startsWith("https://")) {
 				    return;
 				}
 				
