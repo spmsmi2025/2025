@@ -1028,7 +1028,7 @@ body {
 .new-right-column {
   width: 100%;
   grid-column-gap: 160px;
-  grid-row-gap: 160px;
+  grid-row-gap: 80px;
   flex-direction: column;
   display: flex;
 }
