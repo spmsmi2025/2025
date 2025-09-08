@@ -1504,6 +1504,18 @@ td {
   order: -1;
 }
 
+.image-location-4 {
+  width: 400px;
+  height: auto;
+  padding-top: 50%;
+  background-image: url('../img/conferencehotel.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 8px;
+  order: -1;
+}
+
 .image-location-3 {
   width: 400px;
   height: auto;
