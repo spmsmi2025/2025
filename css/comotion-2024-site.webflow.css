@@ -1529,6 +1529,42 @@ td {
   order: -1;
 }
 
+.image-hotel {
+  width: 700px;
+  height: auto;
+  padding-top: 50%;
+  background-image: url('../img/conferencehotel.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 8px;
+  order: -1;
+}
+
+.image-hotel-2 {
+  width: 400px;
+  height: auto;
+  padding-top: 50%;
+  background-image: url('../img/holidayinn1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 8px;
+  order: -1;
+}
+
+.image-hotel-3 {
+  width: 400px;
+  height: auto;
+  padding-top: 50%;
+  background-image: url('../img/holidayinn2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 8px;
+  order: -1;
+}
+
 .header-location {
   order: -1;
 }
