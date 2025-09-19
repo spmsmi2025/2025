@@ -1,0 +1,117 @@
+.section-bg::before {
+    content: "";
+    position: absolute;
+    bottom: 60px;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    transform: skewY(-3deg);
+}
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+}
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    bottom: 0px;
+    left: calc(50% - 25px);
+    background: rgb(224, 58, 60);
+}
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+	text-align: center;
+/*    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x)); */
+}
+.align-items-center {
+    align-items: center !important;
+}
+.align-items-stretch {
+    align-items: stretch !important;
+}
+.d-flex {
+    display: flex !important
+;
+}
+@media (min-width: 992px) {
+    .col-lg-2 {
+        width: 16.6667%;
+        flex: 0 0 auto;
+    }
+}
+@media (min-width: 768px) {
+    .col-md-6 {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+}
+.col-md-12 {
+	text-align: center;
+}
+.col-12 {
+	text-align: center;
+}
+.pricing .box {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background: rgb(43, 43, 43);
+    border-radius: 8px;
+    overflow: hidden;
+}
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+    opacity: 1;
+    transform: translateZ(0px);
+}
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+}
+.hero-area {
+    position: relative;
+    background-color: #f0f1f0;
+    padding: 200px 0 150px 0;
+    padding-bottom: 240px;
+    background-image: url(../img/HZ01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.big-dot {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.hero-area .hero-content h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    color: #fff;
+    margin: 0px 0 18px;
+    overflow: hidden;
+	letter-spacing: -0.5px;
+}
+
+.hover-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+.hover-link:hover {
+    color: #3498db;
+}
+
+.emoji {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Twemoji Mozilla", "EmojiOne Mozilla", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
