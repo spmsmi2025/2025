@@ -3094,3 +3094,63 @@ td {
   font-style: normal;
   font-display: swap;
 }
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+        
+.schedule-table th, 
+.schedule-table td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+        
+.schedule-table th {
+    /* background-color: var(--light-bg); */
+    font-weight: 700;
+}
+
+.schedule-time-slot {
+    font-weight: 600;
+    background-color: #f1f8ff;
+    width: 120px;
+}
+        
+.schedule-keynote {
+    background-color: #e8f4fd;
+    font-weight: 500;
+}
+        
+.schedule-session {
+    background-color: #f0f7ff;
+    font-weight: 500;
+}
+        
+.schedule-break {
+    background-color: #fff8e1;
+}
+        
+.schedule-meal {
+    background-color: #f3e5f5;
+}
+
+.schedule-reception {
+    background-color: #e8f5e9;
+}
+
+.schedule-presentation {
+    font-size: 0.9rem;
+}
+        
+.schedule-presentation-title {
+    font-weight: 500;
+}
+        
+.schedule-authors {
+    font-style: italic;
+    color: #666;
+}
