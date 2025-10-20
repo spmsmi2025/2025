@@ -3095,7 +3095,7 @@ td {
   font-display: swap;
 }
 
-:root{--time-col:7rem;--track-min:14rem;}
+:root{--time-col:7rem;--track-min:9rem;}
 
 .schedule-table td.schedule-time-slot,
 .schedule-table th.schedule-time-slot{
@@ -3120,102 +3120,5 @@ td {
 
 .schedule-table th:first-child,
 .schedule-table td:first-child{text-align:right;padding-right:12px;font-variant-numeric:tabular-nums;white-space:nowrap;}
-/* .schedule-table {
-    width: 85%;
-    border-collapse: collapse;
-}
-
-.schedule-table th{
-	text-align: center; 
-	font-weight: bold; 
-	color: black;
-} 
-
-.schedule-table td {
-    border: 1px solid #333;
-    padding: 10px;
-    text-align: left;
-    vertical-align: top;
-}
-
-.schedule-table th {
-    background-color: #f5f5f5;
-    font-weight: 700;
-}
-
-.schedule-time-slot {
-    font-weight: 600;
-    background-color: #f1f8ff;
-    width: 15%;
-}
-
-.schedule-keynote {
-    background-color: #e8f4fd;
-    font-weight: 500;
-}
-
-.schedule-session {
-    background-color: #f0f7ff;
-    font-weight: 500;
-}
-
-.schedule-break {
-    background-color: #fff8e1;
-}
-
-.schedule-meal {
-    background-color: #f3e5f5;
-}
-
-.schedule-reception {
-    background-color: #e8f5e9;
-}
-
-.schedule-presentation {
-	background-color: #bedfde;
-    font-size: 0.9rem;
-}
-
-.schedule-presentation-title {
-    font-weight: 500;
-}
-
-.schedule-authors {
-    font-style: italic;
-    color: #666;
-    font-size: 0.85rem;
-}
-
-#sched-oct29,
-#sched-oct31 {
-  table-layout: fixed;
-}
-
-.col-time {
-  width: var(--time-col);
-}
-#sched-oct29 th:first-child,
-#sched-oct29 td:first-child,
-#sched-oct31 th:first-child,
-#sched-oct31 td:first-child {
-  text-align: right;
-  padding-right: 12px;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-
-#sched-oct29 .col-track,
-#sched-oct31 .col-track {
-  width: auto;
-  min-width: var(--track-min);
-}
-
-#sched-oct29 td,
-#sched-oct31 td {
-  word-wrap: break-word;
-  overflow-wrap: anywhere;
-}
-
-.schedule-table-wrapper {
-  overflow-x: auto;
-} */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.two-col>.schedule-presentation{margin:0;}
