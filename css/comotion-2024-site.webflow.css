@@ -3095,9 +3095,33 @@ td {
   font-display: swap;
 }
 
+:root{--time-col:7rem;--track-min:14rem;}
 
-.schedule-table {
-    width: 75%;
+.schedule-table td.schedule-time-slot,
+.schedule-table th.schedule-time-slot{
+  text-align:center;
+  vertical-align:middle;
+}
+.schedule-table{width:85%;border-collapse:collapse;table-layout:fixed;}
+.schedule-table th{text-align:center;font-weight:700;color:black;background-color:#f5f5f5;}
+.schedule-table td{border:1px solid #333;padding:10px;text-align:left;vertical-align:top;word-wrap:break-word;overflow-wrap:anywhere;}
+.schedule-time-slot{font-weight:600;background-color:#f1f8ff;}
+.schedule-keynote{background-color:#e8f4fd;font-weight:500;}
+.schedule-session{background-color:#f0f7ff;font-weight:500;}
+.schedule-break{background-color:#fff8e1;}
+.schedule-meal{background-color:#f3e5f5;}
+.schedule-reception{background-color:#e8f5e9;}
+.schedule-presentation{background-color:#bedfde;font-size:.9rem;}
+.schedule-presentation-title{font-weight:500;}
+.schedule-authors{font-style:italic;color:#666;font-size:.85rem;}
+
+.col-time{width:var(--time-col);}
+.col-track{width:auto;min-width:var(--track-min);}
+
+.schedule-table th:first-child,
+.schedule-table td:first-child{text-align:right;padding-right:12px;font-variant-numeric:tabular-nums;white-space:nowrap;}
+/* .schedule-table {
+    width: 85%;
     border-collapse: collapse;
 }
 
@@ -3162,11 +3186,36 @@ td {
     font-size: 0.85rem;
 }
 
+#sched-oct29,
 #sched-oct31 {
-  width: 75%;
   table-layout: fixed;
-  border-collapse: collapse;
 }
 
-#sched-oct31 .col-time  { width: 10rem; }
-#sched-oct31 .col-track {}
+.col-time {
+  width: var(--time-col);
+}
+#sched-oct29 th:first-child,
+#sched-oct29 td:first-child,
+#sched-oct31 th:first-child,
+#sched-oct31 td:first-child {
+  text-align: right;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+#sched-oct29 .col-track,
+#sched-oct31 .col-track {
+  width: auto;
+  min-width: var(--track-min);
+}
+
+#sched-oct29 td,
+#sched-oct31 td {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.schedule-table-wrapper {
+  overflow-x: auto;
+} */
