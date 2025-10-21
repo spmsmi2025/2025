@@ -115,3 +115,22 @@
   font-size: 1.2em;
   line-height: 1.5;
 }
+
+html {
+    max-width: 100%;
+	scrollbar-gutter: stable;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.navbar-2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+	max-width: 12%;
+}
